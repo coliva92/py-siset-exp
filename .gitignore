@@ -1,2 +1,5 @@
 siset/*
-cactus_serial/*
+cactus_lineal/*
+watts4/*
+watts8/*
+__pycache__/*
