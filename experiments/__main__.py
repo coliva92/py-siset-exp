@@ -15,7 +15,7 @@ _SCRIPT_CONTAINERS = {
 
 
 def _main(args):
-  scripts = _SCRIPT_CONTAINERS[args.graph](1)
+  scripts = _SCRIPT_CONTAINERS[args.graph]()
   if args.action == 'create': scripts.create_batch()
   elif args.action == 'metrics': scripts.compute_metrics()
   elif args.action == 'diameter': scripts.compute_diameter()
