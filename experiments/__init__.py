@@ -22,16 +22,16 @@ class IScriptsContainer:
     return f'{self._graph_name}\\{path}'
 
 
-  def _generate_graph(self, n, params):
+  def _generate_graph(self, n):
     return None
 
 
-  def create_batch(self, params=None):
+  def create_batch(self):
     if not isdir(self._graph_name): mkdir(self._graph_name)
     for i in range(11, 18, 2):
       n = 2**i
       for j in range(1, self._num_graphs+1):
-        G = self._generate_graph(n, params)
+        G = self._generate_graph(n)
         print(G.order(), G.size())
         graph = to_siset_graph(G)
         del G
