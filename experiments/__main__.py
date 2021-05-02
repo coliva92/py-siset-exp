@@ -1,9 +1,12 @@
 from argparse import ArgumentParser
-from experiments import SerialCactusScripts
+from .cactus import SerialCactusScripts
+from .watts import WattsStrogatzScripts
+
 
 
 _SCRIPT_CONTAINERS = {
-  'cactus': SerialCactusScripts
+  'cactus': SerialCactusScripts,
+  'watts': WattsStrogatzScripts
 }
 
 
