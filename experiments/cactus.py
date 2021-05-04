@@ -25,7 +25,7 @@ class SerialCactusScripts(IScriptsContainer):
     return curr_idx, next_idx
 
 
-  def _generate_graph(self, n, _):
+  def _generate_graph(self, n):
     G = nx.Graph()
     G.add_node(0)
     n -= 1
