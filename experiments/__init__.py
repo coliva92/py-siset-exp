@@ -19,7 +19,7 @@ class IScriptsContainer:
 
 
   def _h(self, path):
-    return f'{self._graph_name}\\{path}'
+    return f'{self._graph_name}/{path}'
 
 
   def _generate_graph(self, n):
