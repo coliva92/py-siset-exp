@@ -2,13 +2,15 @@ from argparse import ArgumentParser
 from .cactus import SerialCactusScripts
 from .watts import WattsStrogatz4NeighborsScripts, \
   WattsStrogatz8NeighborsScripts
+from .geometric import GeometricRandomGraphScripts
 
 
 
 _SCRIPT_CONTAINERS = {
   'cactus': SerialCactusScripts,
   'watts4': WattsStrogatz4NeighborsScripts,
-  'watts8': WattsStrogatz8NeighborsScripts
+  'watts8': WattsStrogatz8NeighborsScripts,
+  'geometrico': GeometricRandomGraphScripts
 }
 
 
