@@ -4,6 +4,7 @@ from .watts import WattsStrogatz4NeighborsScripts, \
   WattsStrogatz8NeighborsScripts
 from .geometric import GeometricRandomGraphScripts
 from .connected import RandomConnectedGraphScripts
+from .divergent import DuplicationDivergenceGraphScripts
 
 
 
@@ -12,14 +13,15 @@ _SCRIPT_CONTAINERS = {
   'watts4': WattsStrogatz4NeighborsScripts,
   'watts8': WattsStrogatz8NeighborsScripts,
   'geometrico': GeometricRandomGraphScripts,
-  'conectado': RandomConnectedGraphScripts
+  'conectado': RandomConnectedGraphScripts,
+  'divergente': DuplicationDivergenceGraphScripts
 }
 
 
 
 
 def _main(args):
-  scripts = _SCRIPT_CONTAINERS[args.graph](1)
+  scripts = _SCRIPT_CONTAINERS[args.graph]()
   if args.action == 'create': scripts.create_batch()
   elif args.action == 'metrics': scripts.compute_metrics()
   elif args.action == 'diameter': scripts.compute_diameter()
