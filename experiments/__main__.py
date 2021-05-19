@@ -5,6 +5,7 @@ from .watts import WattsStrogatz4NeighborsScripts, \
 from .geometric import GeometricRandomGraphScripts
 from .connected import RandomConnectedGraphScripts
 from .divergent import DuplicationDivergenceGraphScripts
+from .outerplanar import OuterplanarScripts
 
 
 
@@ -14,7 +15,8 @@ _SCRIPT_CONTAINERS = {
   'watts8': WattsStrogatz8NeighborsScripts,
   'geometrico': GeometricRandomGraphScripts,
   'conectado': RandomConnectedGraphScripts,
-  'divergente': DuplicationDivergenceGraphScripts
+  'divergente': DuplicationDivergenceGraphScripts,
+  'outerplanar': OuterplanarScripts
 }
 
 

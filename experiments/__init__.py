@@ -23,6 +23,7 @@ class IScriptsContainer:
 
 
   def _generate_graph(self, n):
+    raise 'Not implemented'
     return None
 
 
