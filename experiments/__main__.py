@@ -6,6 +6,7 @@ from .geometric import GeometricRandomGraphScripts
 from .connected import RandomConnectedGraphScripts
 from .divergent import DuplicationDivergenceGraphScripts
 from .outerplanar import OuterplanarScripts
+from .barabasi import BarabasiAlbertGraphScripts
 
 
 
@@ -16,7 +17,8 @@ _SCRIPT_CONTAINERS = {
   'geometrico': GeometricRandomGraphScripts,
   'conectado': RandomConnectedGraphScripts,
   'divergente': DuplicationDivergenceGraphScripts,
-  'outerplanar': OuterplanarScripts
+  'outerplanar': OuterplanarScripts,
+  'barabasi': BarabasiAlbertGraphScripts
 }
 
 
