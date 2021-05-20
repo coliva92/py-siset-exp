@@ -7,6 +7,7 @@ from .connected import RandomConnectedGraphScripts
 from .divergent import DuplicationDivergenceGraphScripts
 from .outerplanar import OuterplanarScripts
 from .barabasi import BarabasiAlbertGraphScripts
+from .gilbert import GilbertGraphScripts
 
 
 
@@ -18,14 +19,15 @@ _SCRIPT_CONTAINERS = {
   'conectado': RandomConnectedGraphScripts,
   'divergente': DuplicationDivergenceGraphScripts,
   'outerplanar': OuterplanarScripts,
-  'barabasi': BarabasiAlbertGraphScripts
+  'barabasi': BarabasiAlbertGraphScripts,
+  'gilbert': GilbertGraphScripts
 }
 
 
 
 
 def _main(args):
-  scripts = _SCRIPT_CONTAINERS[args.graph]()
+  scripts = _SCRIPT_CONTAINERS[args.graph](1)
   if args.action == 'create': scripts.create_batch()
   elif args.action == 'metrics': scripts.compute_metrics()
   elif args.action == 'diameter': scripts.compute_diameter()
